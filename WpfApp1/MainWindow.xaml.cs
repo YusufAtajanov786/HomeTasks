@@ -24,5 +24,14 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (name.Text.Length == 0)
+            {
+                name.BorderBrush = Brushes.Red;
+                return;
+            }
+            result.Content = $"Hello,{name.Text}";
+        }
     }
 }

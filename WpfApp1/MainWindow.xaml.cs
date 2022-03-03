@@ -31,7 +31,7 @@ namespace WpfApp1
                 name.BorderBrush = Brushes.Red;
                 return;
             }
-            result.Content = $"Hello,{name.Text}";
+            result.Content = $"{ClassLibrary.Timer.CurrentTime()} Hello,{name.Text}!";
         }
     }
 }
